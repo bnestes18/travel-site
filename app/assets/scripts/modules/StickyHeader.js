@@ -50,7 +50,7 @@ class StickyHeader {
             new Waypoint({
                 element: currentPageSection,
                 handler: function(direction) {
-                    if (direction == "down") {
+                    if (direction == "up") {
                         var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
                         that.headerLinks.removeClass("is-current-link");
                         $(matchingHeaderLink).addClass("is-current-link");
